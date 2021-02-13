@@ -134,8 +134,8 @@ class _mail extends State<SendMail> {
 
 
 sendMail(String _msg, String _name, String _flat, BuildContext context) async {
-  String username = 'urbanparivarsevasamiti@gmail.com';
-  String password = 'aman2748';
+  String username = 'mail@gmail.com';
+  String password = 'password';
   //String domainSmtp = 'mail.domain.com';
 
   //also use for gmail smtp
@@ -146,7 +146,7 @@ sendMail(String _msg, String _name, String _flat, BuildContext context) async {
 
   final message = Message()
     ..from = Address(username, 'Your name')
-    ..recipients.add('urbanparivarsevasamiti@gmail.com')
+    ..recipients.add('mail@gmail.com')
   //..ccRecipients.addAll(['destCc1@example.com', 'destCc2@example.com'])
   //..bccRecipients.add(Address('bccAddress@example.com'))
     ..subject = 'Issue by $_name from $_flat at ${DateTime.now()}'
